@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1 id="título">
+            Formulário para Vaga de Emprego
+        </h1>
+      <p id="subtítulo">
+            Essas informações serão necessárias:
+      </p>        
+
+    </header>
+  <form>
+     <section>  
+       <div class="campo">
+            <label>Nome Completo:</label>
+            <input type="text" id="Nome Completo" name="Nome Completo" required>
+        </div>
+       
+        <div class="campo">
+            <label>Idade:</label>
+            <input type="number" id="Idade" name="Idade" required>
+        </div>
+     </section>
+  <section>
+        <div class="campo">
+             <label>E-mail:</label>
+             <input type="email" name="E-mail" id="email" required>
+        </div>
+      <div class="campo">
+        <label>Qual área você quer trabalhar</label>
+          <label> 
+            <input type="radio" name="cargo" value="estagiário" checked>Estagiário
+          <label/>
+        <label>
+            <input type="radio" name="cargo" value="gerente" checked>Gerente
+        </label>
+           <label>
+              <input type="radio" name="cargo" value="subgerente" checked>Sub-Gerente
+           </label>   
+      </div> 
+    <div class="campo">
+          <label>Local de Trabalho</label>
+        <select id="Local de Trabalho">
+            <option selected disabled value="">Selecione</option>
+            <option>Ponto A</option>
+            <option>Ponto B</option>
+            <option>Ponto C</option>
+        </select>
+       <div class="campo">
+         <label>Selecione suas Especializações:</label><br></br>
+         <input type="checkbox" id="Especializações1" name="Especializações1" value="Inglês"> 
+         <label for="Especializações1">Inglês</label> 
+         <input type="checkbox" id="Especializações2" name="Especializações2" value="Espanhol"> 
+         <label for="Especializações2">Espanhol</label>  
+         <input type="checkbox" id="Especializações3" name="Especializações3" value="Curso Superior">
+         <label for="Especializações3">Curso Superior</label>   
+         <input type="checkbox" id="Especializações4" name="Especializações4" value="Curso Técnico">
+         <label for="Especializações4">Curso Técnico</label>   
+       </div> 
+      <footer>
+         <input type="button" value="Enviar">
+      </footer> 
+    </div>  
+  </section>            
+  </form>
+</body>
+</html>
